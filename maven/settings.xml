@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/SETTINGS/1.0.0" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>feeds</id>
+            <username>SA-WW-Apu-Dependency</username>
+            <password>Asdfg!qwer$12345zxcvv</password>
+        </server>
+        <server>
+            <id>apurepo</id>
+            <username>local_dev</username>
+            <password>apusolutions</password>
+        </server>
+    </servers>
+
+    <profiles>
+        <profile>
+            <id>AXRepos</id>
+            <repositories>
+                <repository>
+                    <id>feeds</id>
+                    <name>Feeds axadmin net - Proget maven feed</name>
+                    <url>https://feeds.axadmin.net/maven2/maven/</url>
+                </repository>
+            </repositories>
+        </profile>
+        <profile>
+            <id>apujfrog</id>
+            <repositories>
+                <repository>
+                    <id>apurepo</id>
+                    <name>apu jfrog</name>
+                    <url>http://repo.prod.apusolutions.com:8081/artifactory/development</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>AXRepos</activeProfile>
+        <activeProfile>apujfrog</activeProfile>
+    </activeProfiles>
+
+</settings>
