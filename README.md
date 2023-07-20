@@ -20,12 +20,12 @@ Additional information:
 for the pipeline to function properly.
 
 Required variables:
-CONTAINER_REGISTRY_URL
-CONTAINER_REGISTRY_APU_URL
-CONTAINER_REGISTRY_USERNAME
-CONTAINER_REGISTRY_PASSWORD
-KUBECONFIG_FILE
-TANZU_API_TOKEN
-TANZU_MISSION_CONTROL_BINARY_URL
+- CONTAINER_REGISTRY_URL
+- CONTAINER_REGISTRY_APU_URL
+- CONTAINER_REGISTRY_USERNAME
+- CONTAINER_REGISTRY_PASSWORD
+- KUBECONFIG_FILE
+- TANZU_API_TOKEN
+- TANZU_MISSION_CONTROL_BINARY_URL
 
 you can get the values for these variables in [Vault](https://vault-dev.usdc01.solera.farm/ui/vault/secrets/app-secrets/show/smr/apu/gitlab)
