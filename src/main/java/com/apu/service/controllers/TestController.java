@@ -13,7 +13,7 @@ public class TestController {
 
     @GetMapping
     public ResponseEntity<Response> testEndpoint() {
-        Response response = new Response("archive-service deployed and working", 200);
+        Response response = new Response("service deployed and working", 200);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }
